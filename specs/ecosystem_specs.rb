@@ -12,6 +12,8 @@ class TestEcosystem < MiniTest::Test
     @bear = Bear.new("Yogi", "Grizzly")
   end
 
+
+
 def test_fish_count
   assert_equal(2, @river.fish_count)
 end
@@ -22,7 +24,7 @@ def test_add_fish
 end
 
 def test_remove_fish_from_river
-  @river.remove_fish(@fish3)
+  @river.remove_fish()
   assert_equal(1, @river.fish_count)
 end
 
